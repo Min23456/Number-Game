@@ -1,0 +1,30 @@
+<div class="game-box">
+    <h2>Number Guessing Game</h2>
+    <label>Choose range: </label>
+
+    <select id="rangeSelect">
+        <option value="10">1-10</option>
+        <option value="20">1-20</option>
+        <option value="50">1-50</option>
+        <option value="100">1-100</option>
+    </select>
+  
+    <br><br>
+
+
+    <button onclick="startGame()">Start Game</button>
+
+    <div id="gameArea" style="display:none;">
+        <p>You have <span id="chancesLeft"></span>chances remaining</p>
+        <input type="number" id="guessInput" placeholder="Enter your guess!!!">
+        <button onclick="checkGuess()">Guess</button>
+        <p id="message"></p>
+    </div>
+
+    
+
+
+
+
+</div>
+
