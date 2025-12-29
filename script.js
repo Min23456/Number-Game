@@ -33,7 +33,7 @@ function checkGuess() {
         document.getElementById("message").innerText = "🔥𝓗𝓸𝓽! (𝓥𝓮𝓻𝔂 𝓒𝓵𝓸𝓼𝓮)"; 
     } 
     if (chances === 0) {
-        document.getElementById("message").innerText = "💀𝕺𝖚𝖙 𝖔𝖋 𝕮𝖍𝖆𝖓𝖈𝖊𝖘! 𝕿𝖍𝖊 𝕹𝖚𝖒𝖇𝖊𝖗 𝖜𝖆𝖘" + secretNumber;
+        document.getElementById("message").innerText = "💀𝕺𝖚𝖙 𝖔𝖋 𝕮𝖍𝖆𝖓𝖈𝖊𝖘! 𝕿𝖍𝖊 𝕹𝖚𝖒𝖇𝖊𝖗 𝖜𝖆𝖘 " + secretNumber;
         endGame()
     }
 
