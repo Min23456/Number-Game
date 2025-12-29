@@ -34,11 +34,16 @@ function checkGuess() {
     } 
     if (chances === 0) {
         document.getElementById("message").innerText = "💀𝕺𝖚𝖙 𝖔𝖋 𝕮𝖍𝖆𝖓𝖈𝖊𝖘! 𝕿𝖍𝖊 𝕹𝖚𝖒𝖇𝖊𝖗 𝖜𝖆𝖘" + secretNumber;
+        endGame()
     }
 
 
 }
 
+
+function endGame() {
+    chances = 0;
+}
 
 
 
