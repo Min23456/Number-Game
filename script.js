@@ -9,11 +9,17 @@ function startGame(){
     chances = 5;
     document.getElementById("chancesLeft").innerText = chances;
     document.getElementById("message").innerText = "";
+
+    document.getElementById("guessInput").value = "";
+    document.getElementById("guessInput").disabled = false;
+
+
     document.getElementById("gameArea").style.display = "block";
 
 }
 
 function checkGuess() {
+    if (chances <= 0) return;
     const guess = parseInt(document.getElementById("guessInput").value);
     if (!guess) return;
     chances--;
@@ -43,6 +49,7 @@ function checkGuess() {
 
 function endGame() {
     chances = 0;
+    document.getElementById("guessInput").disabled = true;
 }
 
 
